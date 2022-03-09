@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codificador/Decodificador</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>CÓDIGO SECRETO</h1>
+  </header>
+  <main class="main">
+    <section class="form box">
+        <label for="input-texto"><h2 class="label">Apenas letras minúsculas, sem acento</h2></label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Insira o texto aqui" autofocus>
+        <input class="btn" type="button" value="criptografar!" id="btn-cripto">
+        <input class="btn" type="button" value="descriptografar!" id="btn-descripto">
+        <input class="btn" type="button" value="colar" id="btn-paste">
+    </section>
+
+    <section class="msg box">
+      <h2 id="">Mensagem criptografada:</h2>
+      <input class="text-input" type="text" id="msg" readonly></input>
+      <input class="btn" type="button" value="copiar" id="btn-copy">
+    </section> 
+    
+    <p class="footer-main">Desenvolvido por Rogério Alves.</p>
+  </main> 
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
